@@ -3,12 +3,12 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 // import { Container } from './styles';
 
-const CustomButton = ({ label, onPress }) => {
+const CustomButton = ({ label, onPress, width }) => {
     return (
         <>
             <TouchableOpacity
                 onPress={onPress}
-                style={[styles.button, styles.shadows]}
+                style={[styles.button, styles.shadows, {width: width ? width : '100%'}]}
                 >
                 <Text style={styles.textButton}>{label}</Text>
             </TouchableOpacity>

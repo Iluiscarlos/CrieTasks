@@ -100,6 +100,7 @@ const ViewTasks = () => {
         <View style={styles.container}>
         <StatusBar translucent={false} style="light" backgroundColor='#fff' />
             <SafeAreaView>
+                <View>
                 <Text style={styles.label}>Tarefa</Text>
                 <TextInput
                     keyboardType='default'
@@ -113,7 +114,7 @@ const ViewTasks = () => {
                     onPress={upgradeList}
                     label="Salvar">
                 </Button>
-
+                </View>
 
 
                 {
@@ -189,7 +190,8 @@ const styles = StyleSheet.create({
     itemText: {
         color: '#fff',
         fontSize: 24
-    }
+    },
+
 });
 
 export default ViewTasks;

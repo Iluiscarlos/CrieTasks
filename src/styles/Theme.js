@@ -14,6 +14,30 @@ export const Theme =  StyleSheet.create({
     title: {
         fontSize: 24,
         color: '#BDF24B',
-        margin: 20
+        margin: 20,
+        marginLeft: 0
+    },
+    container: {
+        flex: 1,
+        backgroundColor: '#0C1A26',
+        alignItems: 'center',
+        paddingTop: 45
+    },
+    cardContainer:{
+        flexDirection: 'row',
+        flex: 1,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingRight: 8
+    },
+    cardInfo:{
+        display: 'flex',
+        flexDirection: 'column',
+        paddingRight: 50
+        
+    },
+    login:{
+        flex: 1,
+        backgroundColor:"#0C1A26"
     }
 })

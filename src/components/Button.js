@@ -18,6 +18,7 @@ const Button = ({ label, onPress }) => {
 
 const styles = StyleSheet.create({
     button: {
+        width: '100%',
         height: 48,
         backgroundColor: '#BDF24B',
         borderRadius: 8,

@@ -18,16 +18,36 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kochenborgerluis.myapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permitions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "FOREGROUND_SERVICE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a4a5081d-bc74-4f31-83ce-a6c6221b8c2b"
+      }
+    },
+    "plugins": [
+          [
+            "expo-notifications",
+            {
+              "icon": "./local/assets/notification-icon.png",
+              "color": "#ffffff"
+            }
+          ]
+        ]
+      }
     }
-  }
-}
